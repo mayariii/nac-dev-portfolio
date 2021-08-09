@@ -1,10 +1,76 @@
 html {
     /* prevents padding adding extra heights and width */
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
- body {
-     margin: 0;
-     /* always stretch the background to be the full height of the screen */
-     min-height: 100vh;
- }
+body {
+    margin: 0;
+    /* always stretch the background to be the full height of the screen */
+    min-height: 100vh;
+}
+
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+    font-family: 'Inter',
+        sans-serif;
+    color: white;
+}
+
+
+canvas {
+    display: block;
+    /* vertical-align: bottom; */
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #17182f;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+/* HERO SECTION */
+ß #hero-section {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.hero-left {
+    justify-self: end;
+}
+
+.hero-right {
+    display: flex;
+    align-self: center;
+}
+
+h1 {
+    color: white;
+    max-width: 17ch;
+    font-size: 2.5rem;
+}
+
+.gradient-text {
+    background-image: linear-gradient(to right, rgb(255, 164, 216), rgb(0, 102, 255));
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}

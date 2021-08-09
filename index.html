@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Nicole Analise Cox | Creative Engineer</title>
     <link rel="icon" type="image/png" href="./assets/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +20,41 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- hero section -->
-    <nav>
+    <!-- NAVIGATION -->
+    <header>
+        <div class="nav-container">
+            <nav>
 
-    </nav>
+                <a class="navbar-brand" href="index.html">
+                    <ion-icon name="sparkles"></ion-icon>
+                </a>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Recognitions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN CONTENT -->
     <main>
+        <!-- HERO SECTION -->
         <section id="hero-section">
             <div class="hero-grid">
                 <div class="hero-left">
@@ -32,8 +63,35 @@
                     </lottie-player>
                 </div>
                 <div class="hero-right">
-                    <h1><span class="gradient-text">I am a creative engineer</span> who designs, develops and delivers.</h1>
+                    <h1><span class="gradient-text">I am a creative engineer</span> who designs, develops and delivers.
+                    </h1>
                 </div>
+                <div class="scroll-container">
+                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_vjs5zX.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about-section">
+            <div class="flex-container">
+                <h2 class="gradient-text">who is she?</h2>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="recognitions-section">
+            <div class="flex-container">
+                <h2 class="gradient-text">projects</h2>
+            </div>
+        </section>
+
+        <!-- RECOGNITION SECTION -->
+        <section id="recognitions-section">
+            <div class="flex-container">
+                <h2 class="gradient-text">recognitions</h2>
             </div>
         </section>
     </main>
@@ -47,7 +105,8 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="/script.js"></script>
 </body>
 

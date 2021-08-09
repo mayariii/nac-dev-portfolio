@@ -41,7 +41,7 @@ header {
 }
 
 .nav-container {
-    width: 90%;
+    width: 95%;
     max-width: 80rem;
     margin: 1rem auto;
 }
@@ -211,7 +211,7 @@ ion-icon {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.25fr 1fr;
     grid-template-rows: 1fr 1fr;
     
 }
@@ -229,7 +229,7 @@ ion-icon {
 
 h1 {
     color: white;
-    max-width: 20ch;
+    max-width: 25ch;
     font-size: 2.5rem;
     font-weight: 400;
 }
@@ -243,7 +243,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     font-weight: 700;
-    display: inline-block;
+    display: block;
 }
 
 .scroll-container{

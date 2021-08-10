@@ -1,10 +1,9 @@
-
 // NAVBAR
 const selectElement = (element) => document.querySelector(element);
 
 selectElement('.hamburger').addEventListener('click', () => {
-    selectElement('.hamburger').classList.toggle('active');
-    selectElement('.nav-list').classList.toggle('active');
+  selectElement('.hamburger').classList.toggle('active');
+  selectElement('.nav-list').classList.toggle('active');
 });
 
 //  PARTICLES JS
@@ -132,7 +131,7 @@ const initCursor = () => {
     clientX = e.clientX;
     clientY = e.clientY;
   });
-  
+
   // transform the innerCursor to the current mouse position
   // use requestAnimationFrame() for smooth performance
   const render = () => {
@@ -143,7 +142,7 @@ const initCursor = () => {
     //   x: clientX,
     //   y: clientY
     // });
-    
+
     requestAnimationFrame(render);
   };
   requestAnimationFrame(render);
@@ -170,12 +169,12 @@ const initCanvas = () => {
   const strokeWidth = 1;
   const segments = 8;
   const radius = 15;
-  
+
   // we'll need these later for the noisy circle
   const noiseScale = 150; // speed
   const noiseRange = 4; // range of distortion
   let isNoisy = false; // state
-  
+
   // the base shape for the noisy circle
   const polygon = new paper.Path.RegularPolygon(
     new paper.Point(0, 0),
@@ -187,22 +186,22 @@ const initCanvas = () => {
   polygon.smooth();
   group = new paper.Group([polygon]);
   group.applyMatrix = false;
-  
+
   const noiseObjects = polygon.segments.map(() => new SimplexNoise());
   let bigCoordinates = [];
-  
+
   // function for linear interpolation of values
   const lerp = (a, b, n) => {
     return (1 - n) * a + n * b;
   };
-  
+
   // function to map a value from one range to another range
   const map = (value, in_min, in_max, out_min, out_max) => {
     return (
       ((value - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
     );
   };
-  
+
   // the draw loop of Paper.js 
   // (60fps with requestAnimationFrame under the hood)
   paper.view.onFrame = event => {
@@ -216,5 +215,16 @@ const initCanvas = () => {
 }
 
 initCanvas();
+
+// locomotive scroll
+window.addEventListener("load", function (event) {
+  const scroller = new LocomotiveScroll(
+    {
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+  }
+  )
+}
+);
 
 

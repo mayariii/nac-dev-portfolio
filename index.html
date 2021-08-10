@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -34,16 +35,16 @@
 
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">About</a>
+                        <a href="#about-section" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Projects</a>
+                        <a href="#projects-section" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Recognitions</a>
+                        <a href="#contact-section" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Blog</a>
+                        <a href="https://www.nicoleanalisecox.com" class="nav-link" target="_blank">Blog</a>
                     </li>
                 </ul>
 
@@ -84,9 +85,10 @@
                 <p class="max-char center-text intro-text">I'm a British-Filipina, technical creative passionate about
                     growing myself, others and the world.</p>
 
-                <div class="about-item">
+                <div class="about-item" >
                     <img class="about-img" src="./assets/about-baby-nicole.jpg" alt="">
-                    <p class="about-text max-char">My creative/tech journey started off in the days of Windows 98 when I
+                    <p class="about-text max-char">I think my creative/tech journey started off in the days of Windows
+                        98 when I
                         was this small! I loved playing around with programs like MS Paint, Publisher, Word Art, and
                         loved making my school homework stand out.Throughout school and college my interest in digital
                         work grew during GCSE Product Design and Digital Applications lessons, where I first learned
@@ -99,9 +101,8 @@
                     <img class="about-img" src="./assets/about-grad-nicole.jpg" alt="">
                     <p class="about-text max-char">University gave me the opportunity to combine creativity with deeper
                         technical knowledge, with a degree in Product Design Engineering. It was here I understood the
-                        importance of the user in design, design fundamentals, and the knowledge that success in design
-                        is not only aesthetics and customer appeal, but also fitness for purpose and correct
-                        functionality, together with superior quality.
+                        importance of the user in design, design fundamentals and a first glimpse into software
+                        engineering.
 
                         Alongside studying I dived right into volunteering Media and Marketing for various university
                         organisations.</p>
@@ -112,30 +113,48 @@
                     <p class="about-text max-char">
                         Since then, I dedicate myself to constant growth and learning, with a huge interest in web
                         development and coding. I have completed the #100DaysOfCode challenge, and currently mid-way
-                        through #365DaysOfCode. I am currently a Software Engineer at Siemens, contributing to the delivery of communication/control software for the Crossrail project (new undeground line in London). 
+                        through #365DaysOfCode. I am currently a Software Engineer at Siemens, contributing to the
+                        delivery of communication/control software for the Crossrail project (new undeground line in
+                        London).
                         <br>
                         I am intrigued by all things self-development and love to read books about how we can be our
-                        best selves through self-improvement, mindset, productivity, learning and wellbeing.</p>
+                        best selves through self-improvement, mindset, learning and wellbeing.</p>
                 </div>
 
                 <div class="about-item switched">
                     <img class="about-img" src="./assets/about-bungee-nicole.jpeg" alt="">
                     <p class="about-text max-char">
-                        As an avid charity-fundraiser I have used my design skills for good. I worked with the Mayor of
+                        As an avid charity-fundraiser I have used my skills for good. I worked with the Mayor of
                         Swindon on the fundraising committee to design promotional graphics for charity events. The
                         total raised over the mayoral year for the charities was over £35,000!
 
-                        I did also jump out of a plane, run a marathon, abseil off a cathedral, and bungee jumped off a
-                        crane. Not design experience, and also terrifying, but it did give me some new life perspectives
+                        I have also jumped out of a plane, ran a marathon, abseiled off a cathedral, and bungee jumped
+                        off a
+                        crane. Terrifying, but they did give me some new life perspectives
                         - like anything is possible if you have 20 seconds of courage!</p>
                 </div>
 
         </section>
 
         <!-- PROJECTS SECTION -->
-        <section id="recognitions-section" class="section">
+        <section id="projects-section" class="section" data-scroll-section>
             <div class="flex-container">
                 <h2 class="gradient-text">projects</h2>
+                <p class="center-text">You can find a selection of my projects below, with more on my GitHub profile.<br>This site is a first iteration and is currently being improved!
+                </p>
+                <p class="center-text">Technologies I'm familiar with:</p>
+                <div class="technologies-container">
+                    <img src="./assets/icon-html.svg" alt="">
+                    <img src="./assets/icon-css.svg" alt="">
+                    <img src="./assets/icon-bootstrap.svg" class="icon-sm" alt="">
+                    <img src="./assets/icon-sass.svg" alt="">
+                    <img src="./assets/icon-js.svg" class="icon-sm" alt="">
+                    <img src="./assets/icon-csharp.svg" alt="">
+                    <img src="./assets/icon-jira.svg" class="icon-sm" alt="">
+                    <img src="./assets/icon-ps.svg" class="icon-sm" alt="">
+                    <img src="./assets/icon-ai.svg" class="icon-sm" alt="">
+                    <img src="./assets/icon-office.svg" class="icon-sm" alt="">
+                </div>
             </div>
             <!-- CARD 1 -->
             <div class="card-container flex-container">
@@ -152,10 +171,10 @@
                             <p>A responsive landing page, using HTML, CSS and Sass.</p>
                         </div>
                         <div class="button-container">
-                            <div class="project-cta"><a href="https://nicoleanalisecox.github.io/huddle-landing-page/">
+                            <div class="project-cta"><a href="https://nicoleanalisecox.github.io/huddle-landing-page/" target="_blank">
                                     <p><i class="far fa-eye cta-icon"></i>See Live</p>
                                 </a></div>
-                            <div class="project-cta"><a href="https://github.com/nicoleanalisecox/huddle-landing-page">
+                            <div class="project-cta"><a href="https://github.com/nicoleanalisecox/huddle-landing-page" target="_blank">
                                     <p><i class="fab fa-github-alt cta-icon"></i>Source Code</p>
                                 </a></div>
                         </div>
@@ -178,10 +197,10 @@
                             <p>A customisable linear gradient generator built with JavaScript.</p>
                         </div>
                         <div class="button-container">
-                            <div class="project-cta"><a href="https://nicoleanalisecox.github.io/gradient-generator/">
+                            <div class="project-cta"><a href="https://nicoleanalisecox.github.io/gradient-generator/" target="_blank">
                                     <p><i class="far fa-eye cta-icon"></i>See Live</p>
                                 </a></div>
-                            <div class="project-cta"><a href="https://github.com/nicoleanalisecox/gradient-generator">
+                            <div class="project-cta"><a href="https://github.com/nicoleanalisecox/gradient-generator" target="_blank">
                                     <p><i class="fab fa-github-alt cta-icon"></i>Source Code</p>
                                 </a></div>
                         </div>
@@ -202,7 +221,7 @@
                                 code.</p>
                         </div>
                         <div class="button-container">
-                            <div class="project-cta"><a href="https://github.com/nicoleanalisecox/N2T-Assembler">
+                            <div class="project-cta"><a href="https://github.com/nicoleanalisecox/N2T-Assembler" target="_blank">
                                     <p><i class="fab fa-github-alt cta-icon"></i>Source Code</p>
                                 </a></div>
                         </div>
@@ -216,14 +235,14 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section id="contact-section">
+        <section id="contact-section" >
             <div class="flex-container">
                 <h2 class="gradient-text">contact</h2>
                 <p>Get in touch!</p>
                 <div class="social-icons">
-                    <a social-link href="https://github.com/nicoleanalisecox"><i
+                    <a class="social-link" href="https://github.com/nicoleanalisecox" target="_blank"><i
                             class="fab fa-github-alt social-icon"></i></i></a>
-                    <a social-link href="https://www.linkedin.com/in/nicoleanalisecox/"><i
+                    <a class="social-link" href="https://www.linkedin.com/in/nicoleanalisecox/" target="_blank"><i
                             class="fab fa-linkedin-in social-icon"></i></a>
 
                 </div>
@@ -231,7 +250,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer data-scroll-section>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
         <div class="footer-container">
@@ -256,9 +275,10 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
     <script type="text/javascript" src="./js/script.js"></script>
     <script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
 </body>
-</body>
+
 
 </html>

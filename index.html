@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -81,101 +81,184 @@
         <section id="about-section">
             <div class="flex-container">
                 <h2 class="gradient-text">who is she?</h2>
-                <p>I'm a British-Filipina, technical creative passionate about growing myself, others and the world.</p>
+                <p class="max-char center-text intro-text">I'm a British-Filipina, technical creative passionate about
+                    growing myself, others and the world.</p>
+
+                <div class="about-item">
+                    <img class="about-img" src="./assets/about-baby-nicole.jpg" alt="">
+                    <p class="about-text max-char">My creative/tech journey started off in the days of Windows 98 when I
+                        was this small! I loved playing around with programs like MS Paint, Publisher, Word Art, and
+                        loved making my school homework stand out.Throughout school and college my interest in digital
+                        work grew during GCSE Product Design and Digital Applications lessons, where I first learned
+                        about the design process, how to create a simple website using HTML, and entering the world of
+                        multimedia. I had a phase of being obsessed with creating Piczo websites, a.k.a home of the
+                        glittery graphics!</p>
+                </div>
+
+                <div class="about-item switched">
+                    <img class="about-img" src="./assets/about-grad-nicole.jpg" alt="">
+                    <p class="about-text max-char">University gave me the opportunity to combine creativity with deeper
+                        technical knowledge, with a degree in Product Design Engineering. It was here I understood the
+                        importance of the user in design, design fundamentals, and the knowledge that success in design
+                        is not only aesthetics and customer appeal, but also fitness for purpose and correct
+                        functionality, together with superior quality.
+
+                        Alongside studying I dived right into volunteering Media and Marketing for various university
+                        organisations.</p>
+                </div>
+
+                <div class="about-item">
+                    <img class="about-img" src="./assets/about-coding-nicole.jpeg" alt="">
+                    <p class="about-text max-char">
+                        Since then, I dedicate myself to constant growth and learning, with a huge interest in web
+                        development and coding. I have completed the #100DaysOfCode challenge, and currently mid-way
+                        through #365DaysOfCode. I am currently a Software Engineer at Siemens, contributing to the delivery of communication/control software for the Crossrail project (new undeground line in London). 
+                        <br>
+                        I am intrigued by all things self-development and love to read books about how we can be our
+                        best selves through self-improvement, mindset, productivity, learning and wellbeing.</p>
+                </div>
+
+                <div class="about-item switched">
+                    <img class="about-img" src="./assets/about-bungee-nicole.jpeg" alt="">
+                    <p class="about-text max-char">
+                        As an avid charity-fundraiser I have used my design skills for good. I worked with the Mayor of
+                        Swindon on the fundraising committee to design promotional graphics for charity events. The
+                        total raised over the mayoral year for the charities was over £35,000!
+
+                        I did also jump out of a plane, run a marathon, abseil off a cathedral, and bungee jumped off a
+                        crane. Not design experience, and also terrifying, but it did give me some new life perspectives
+                        - like anything is possible if you have 20 seconds of courage!</p>
+                </div>
+
         </section>
 
         <!-- PROJECTS SECTION -->
-        <section id="recognitions-section">
+        <section id="recognitions-section" class="section">
             <div class="flex-container">
                 <h2 class="gradient-text">projects</h2>
             </div>
-            <div>
-
-            
-            <!-- Grid -->
-            <section class="slider">
-                <div class="slide slide--current" data-content="content-1">
-                    <div class="slide__mover">
-                        <div class="zoomer flex-center">
-                            <img class="zoomer__image" src="images/iphone.png" alt="iPhone" />
-                            <div class="preview">
-                                <img src="images/iphone-content-preview.png" alt="iPhone app preview" />
-                                <div class="zoomer__area zoomer__area--size-2"></div>
-                            </div>
+            <!-- CARD 1 -->
+            <div class="card-container flex-container">
+                <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="content">
+                        <div class="tech-icons-container">
+                            <img class="tech-icon" src="./assets/icon-html.svg" alt="HTML icon">
+                            <img class="tech-icon" src="./assets/icon-css.svg" alt="CSS icon">
+                            <img class="tech-icon" src="./assets/icon-sass.svg" alt="CSS icon">
+                        </div>
+                        <img class="project-img" src="./assets/project-landing-page.png" alt="">
+                        <div class="project-info">
+                            <h3 class="project-title">Landing Page</h3>
+                            <p>A responsive landing page, using HTML, CSS and Sass.</p>
+                        </div>
+                        <div class="button-container">
+                            <div class="project-cta"><a href="https://nicoleanalisecox.github.io/huddle-landing-page/">
+                                    <p><i class="far fa-eye cta-icon"></i>See Live</p>
+                                </a></div>
+                            <div class="project-cta"><a href="https://github.com/nicoleanalisecox/huddle-landing-page">
+                                    <p><i class="fab fa-github-alt cta-icon"></i>Source Code</p>
+                                </a></div>
                         </div>
                     </div>
-                    <h2 class="slide__title"><span>The Classy</span> iPhone 6</h2>
                 </div>
-                <div class="slide" data-content="content-2">
-                    <!-- ... -->
-                </div>
-                <!-- ... -->
-                <nav class="slider__nav">
-                    <button class="button button--nav-prev">
-                        <i class="icon icon--arrow-left"></i>
-                        <span class="text-hidden">Previous product</span>
-                    </button>
-                    <button class="button button--zoom">
-                        <i class="icon icon--zoom"></i>
-                        <span class="text-hidden">View details</span>
-                    </button>
-                    <button class="button button--nav-next">
-                        <i class="icon icon--arrow-right"></i>
-                        <span class="text-hidden">Next product</span>
-                    </button>
-                </nav>
-            </section>
-            <!-- /slider-->
-            <!-- content -->
-            <section class="content">
-                <div class="content__item" id="content-1">
-                    <img class="content__item-img rounded-right" src="images/iphone-content.png"
-                        alt="Apple Watch Content" />
-                    <div class="content__item-inner">
-                        <h2>The iPhone 6</h2>
-                        <h3>Incredible performance for powerful apps</h3>
-                        <p>...</p>
+
+
+                <!-- CARD 2 -->
+
+                <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="content">
+                        <div class="tech-icons-container">
+                            <img class="tech-icon" src="./assets/icon-html.svg" alt="HTML icon">
+                            <img class="tech-icon" src="./assets/icon-css.svg" alt="CSS icon">
+                            <img class="tech-icon icon-sm" src="./assets/icon-js.svg" alt="CSS icon">
+                        </div>
+                        <img class="project-img" src="./assets/project-gradient.png" alt="">
+                        <div class="project-info">
+                            <h3 class="project-title">CSS Gradient Generator</h3>
+                            <p>A customisable linear gradient generator built with JavaScript.</p>
+                        </div>
+                        <div class="button-container">
+                            <div class="project-cta"><a href="https://nicoleanalisecox.github.io/gradient-generator/">
+                                    <p><i class="far fa-eye cta-icon"></i>See Live</p>
+                                </a></div>
+                            <div class="project-cta"><a href="https://github.com/nicoleanalisecox/gradient-generator">
+                                    <p><i class="fab fa-github-alt cta-icon"></i>Source Code</p>
+                                </a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="content__item" id="content-2">
-                    <!-- ... -->
+
+                <!-- CARD 3 -->
+
+                <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="content">
+                        <div class="tech-icons-container">
+                            <img class="tech-icon" src="./assets/icon-csharp.svg" alt="HTML icon">
+                        </div>
+                        <img class="project-img" src="./assets/project-assembler.png" alt="">
+                        <div class="project-info">
+                            <h3 class="project-title">Assembler</h3>
+                            <p>Translates programs written in the Nand to Tetris Hack assembly language into machine
+                                code.</p>
+                        </div>
+                        <div class="button-container">
+                            <div class="project-cta"><a href="https://github.com/nicoleanalisecox/N2T-Assembler">
+                                    <p><i class="fab fa-github-alt cta-icon"></i>Source Code</p>
+                                </a></div>
+                        </div>
+                    </div>
                 </div>
-                <!-- ... -->
-                <button class="button button--close">
-                    <i class="icon icon--circle-cross"></i>
-                    <span class="text-hidden">Close content</span>
-                </button>
-            </section>
-            <!-- /content -->
+
+
             </div>
-            </div>
+
+
         </section>
 
-        <!-- RECOGNITION SECTION -->
-        <section id="recognitions-section">
+        <!-- CONTACT SECTION -->
+        <section id="contact-section">
             <div class="flex-container">
-                <h2 class="gradient-text">recognitions</h2>
+                <h2 class="gradient-text">contact</h2>
+                <p>Get in touch!</p>
+                <div class="social-icons">
+                    <a social-link href="https://github.com/nicoleanalisecox"><i
+                            class="fab fa-github-alt social-icon"></i></i></a>
+                    <a social-link href="https://www.linkedin.com/in/nicoleanalisecox/"><i
+                            class="fab fa-linkedin-in social-icon"></i></a>
+
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+        <div class="footer-container">
+            <div class="back-to-top">
+                <a href="#" class="flex-container">
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_ufkgreod.json"
+                        background="transparent" speed="0.5" style="width: 150px; height: 150px;" loop autoplay>
+                    </lottie-player>
+                    <p class="back-to-top-label">back to top</p>
+                </a>
+            </div>
+
+            <img class="footer-img" src="./assets/city-4049537.svg" alt="">
+        </div>
     </footer>
 
     <!-- Script -->
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-    <script src="js/classie.js"></script>
-	<script src="js/dynamics.min.js"></script>
-	<script src="js/main.js"></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
+</body>
 </body>
 
 </html>
